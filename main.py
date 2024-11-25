@@ -5,6 +5,9 @@ import tensorflow as tf
 import numpy as np
 from transformers import AutoTokenizer, AutoModel
 import torch
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 
 # Initialize FastAPI app
 app = FastAPI()
